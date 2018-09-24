@@ -1,0 +1,79 @@
+/* Settings for all pages */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/body_background.jpg");
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+nav a {
+  width: 15%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  position: relative;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+nav a .material-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+nav .current {
+  background-color: white;
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: 70%;
+  background-image: url("../images/main_background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+}

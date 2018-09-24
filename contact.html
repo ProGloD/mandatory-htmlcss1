@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style media="screen">
+      form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+      button,
+      input,
+      label,
+      select,
+      textarea {
+        margin: 0.3rem 0;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        font-size: 1.5em;
+      }
+      select {
+        align-self: flex-start;
+      }
+      textarea {
+        width: 100%;
+      }
+      .send {
+        align-self: flex-end;
+        width: 20%;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 27px;
+      }
+      .send:hover {
+        cursor: pointer;
+      }
+      .send:active {
+        background-color: white;
+        color: black;
+      }
+      .material-icons {
+        line-height: 27px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Contact</h1>
+      </div>
+      <nav>
+        <a href="index.html" title="Home">
+          <i class="material-icons">home</i>
+        </a>
+        <a href="about.html" title="About me">
+          <i class="material-icons">person</i>
+        </a>
+        <a href="movies.html" title="Favorites movies">
+          <i class="material-icons">movie</i>
+        </a>
+        <a href="links.html" title="Favorites websites">
+          <i class="material-icons">web</i>
+        </a>
+        <a href="contact.html" title="Contact">
+          <i class="material-icons">contact_mail</i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label>Name:</label>
+          <input class="name_field" type="text" placeholder="Name" required="required" pattern="[A-Z][a-z]+">
+        </div>
+        <div>
+          <label>Email:</label>
+          <input class="email_field" type="email" placeholder="email@domain.com" required="required">
+        </div>
+        <label>Message:</label>
+        <select class="subject" required="required">
+          <option>Jobb offer</option>
+          <option>Ask question</option>
+          <option>Other</option>
+        </select>
+        <textarea rows="8" required="required"></textarea>
+        <button class="send" type="submit">
+          <i class="material-icons">send</i>
+        </button>
+      </form>
+    </main>
+    <footer>
+      <h2>Yaroslav Lashchenko</h2>
+      <h2>Tel: 055-5555555</h2>
+      <h2>
+        <a href="mailto:someone@domain.com">someone@domain.com</a>
+      </h2>
+    </footer>
+  </body>
+</html>
